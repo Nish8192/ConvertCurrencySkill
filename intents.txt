@@ -1,0 +1,30 @@
+{
+  "intents": [
+    {
+      "intent": "ConvertCurrencyIntent",
+      "slots": [
+        {
+          "name": "OriginalCurr",
+          "type": "CURRENCY_TYPE"
+        },
+        {
+          "name": "DestCurr",
+          "type": "CURRENCY_TYPE"
+        },
+        {
+          "name": "Amount",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

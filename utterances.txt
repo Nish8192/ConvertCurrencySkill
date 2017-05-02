@@ -1,0 +1,3 @@
+ConvertCurrencyIntent convert {amount} {OriginalCurr} to {DestCurr}
+ConvertCurrencyIntent how many {OriginalCurr} in {DestCurr}
+ConvertCurrencyIntent convert {OriginalCurr} to {DestCurr}
