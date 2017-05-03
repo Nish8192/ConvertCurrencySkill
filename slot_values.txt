@@ -1,31 +1,31 @@
-australian dollar
-bulgarian lev
-brazil real
-canadian dollar
-swiss franc
-chinese yuan
-czech koruna
-danish krone
-british pound
-hong kong dollar
-croatian kuna
-hungarian forint
-indonesia rupiah
-israeli shekel
-indian rupee
-japanese yen
-korean won
-mexican peso
-malaysian ringgit
-norway krone
-new zealand dollar
-phillippines peso
-polish zloty
-romanian new leu
-russian ruble
-swedish krona
-singapore dollar
-thailand baht
-turkish lira
-united states dollars
-south african rand
+Australian dollars
+Bulgarian lev
+Brazil real
+Canadian dollars
+Swiss francs
+Chinese yuan
+Czech koruna
+Danish krone
+British pounds
+Hong Kong dollars
+Croatian kuna
+Hungarian forints
+Indonesia rupiah
+Israeli shekels
+Indian rupees
+Japanese yen
+Korean won
+Mexican pesos
+Malaysian ringgit
+Norway krone
+New Zealand dollars
+Phillippines pesos
+Polish zloty
+Romanian new leu
+Russian rubles
+Swedish krona
+Singapore dollars
+Thailand baht
+Turkish lira
+United States dollars
+South African rand
