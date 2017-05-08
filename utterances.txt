@@ -2,3 +2,4 @@ ConvertCurrencyIntent convert {Amount} {OriginalCurr} to {DestCurr}
 ConvertCurrencyIntent convert {Amount} from {OriginalCurr} to {DestCurr}
 ConvertCurrencyIntent how many {OriginalCurr} in {DestCurr}
 ConvertCurrencyIntent convert {OriginalCurr} to {DestCurr}
+SayGoodbyeIntent exit

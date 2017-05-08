@@ -27,7 +27,18 @@ function httpsGet(myData){
         res.on('end', () => {
             var pop = JSON.parse(returnData);
             console.log(pop);
+            var oRate = pop.rates['USD']
+            var dRate = pop.rates['GBP']
+            var result = 50/oRate
+            result *= dRate
+
+            exRate = (1 / oRate) * dRate;
+            console.log(exRate);
+            console.log(50*exRate);
+            console.log(result);
         });
     });
     req.end();
 }
+
+console.log("50"/.5);

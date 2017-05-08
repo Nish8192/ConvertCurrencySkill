@@ -60,7 +60,8 @@ var handlers = {
         this.emit('ConvertCurrency');
     },
     'Introduce': function(){
-        this.emit(':tell', "Welcome to currency convertor, please tell me what currencies you want to convert.");
+        this.emit(':ask', "Welcome to currency convertor, please tell me what currencies you want to convert.");
+        // this.emit(':ask', "How can I help you?")
     },
     'ConvertCurrency': function () {
 
@@ -86,12 +87,14 @@ var handlers = {
             if(amount){
                 // amount = parseInt(amount);
                 // destRate = parseInt(destRate);
-                var result = amount * destRate;
+                var result = (amount / origRate) * destRate;
                 result = result.toFixed(2);
                 var speechOutput = amount + " " + origCurr + " is " + result + " "+ destCurr;
             }
             else{
-                var speechOutput = origCurr + " is exchanging at " + destRate + " "+ destCurr;
+                var result = (1 / origRate) * destRate
+                result = result.toFixed(2);
+                var speechOutput = origCurr + " is exchanging at " + result + " "+ destCurr;
             }
             this.emit(':tell', speechOutput);
         })
@@ -107,7 +110,15 @@ var handlers = {
     },
     'AMAZON.StopIntent': function () {
         this.emit(':tell', 'Goodbye!');
-    }
+    },
+    'SayGoodbyeIntent': function(){
+        this.emit(':tell', 'Goodbye!')
+    },
+    'Unhandled': function(){
+        var speechOutput = "You can give me a starting currency with or without an amount and an ending currency or, you can say exit... What can I help you with?";
+        var reprompt = "What can I help you with?";
+        this.emit(':ask', speechOutput, reprompt);
+    },
 };
 
 
